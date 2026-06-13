@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PICSIO — Building Future-Ready Digital Experiences</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+ <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- CUSTOM CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- LOADING SCREEN -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">PICSIO</div>
+      <div class="loader-bar"><div class="loader-fill" id="loaderFill"></div></div>
+      <div class="loader-text" id="loaderText">Initializing experience...</div>
+    </div>
+  </div>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">PICS<span>IO</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#booking" class="nav-cta">Book a Call</a>
+      <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <canvas id="particleCanvas"></canvas>
+    <div class="hero-glow" id="heroGlow"></div>
+    <div class="hero-content">
+      <div class="hero-badge reveal">Digital Studio · Est. 2024</div>
+      <h1 class="hero-title reveal">
+        <span class="hero-title-line">Building</span>
+        <span class="hero-title-line accent-line">Future-Ready</span>
+        <span class="hero-title-line">Digital<em> Experiences</em></span>
+      </h1>
+      <p class="hero-desc reveal">We create high-performance websites, digital systems, and online experiences designed to help businesses scale faster.</p>
+      <div class="hero-btns reveal">
+        <a href="#booking" class="btn btn-primary">
+          <span>Book Strategy Call</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#portfolio" class="btn btn-ghost">View Portfolio</a>
+      </div>
+      <div class="hero-scroll reveal">
+        <div class="scroll-line"></div>
+        <span>Scroll to explore</span>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-card-stack">
+        <div class="float-card card-1">
+          <div class="fc-dot"></div>
+          <div class="fc-label">UI/UX Design</div>
+          <div class="fc-val">+240%</div>
+        </div>
+        <div class="float-card card-2">
+          <div class="fc-dot green"></div>
+          <div class="fc-label">Conversion Rate</div>
+          <div class="fc-val">98.6%</div>
+        </div>
+        <div class="float-card card-3">
+          <div class="fc-icon">⚡</div>
+          <div class="fc-label">Performance Score</div>
+          <div class="fc-bar"><div class="fc-bar-fill" style="width:94%"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-label reveal">About Us</div>
+      <div class="about-grid">
+        <div class="about-left">
+          <h2 class="section-title reveal">Who We Are</h2>
+          <p class="about-text reveal">Picsio is a creative digital startup focused on helping businesses build powerful online identities through modern websites, digital systems, and user-focused experiences.</p>
+          <p class="about-text reveal">We combine creativity, strategy, and technology to deliver solutions that are visually impressive and business-driven.</p>
+          <div class="about-tags reveal">
+            <span>Strategy</span><span>Design</span><span>Development</span><span>Growth</span>
+          </div>
+        </div>
+        <div class="about-right">
+          <div class="about-card-main reveal">
+            <div class="acm-inner">
+              <div class="acm-top">
+                <div class="acm-avatar">P</div>
+                <div>
+                  <div class="acm-name">Picsio Studio</div>
+                  <div class="acm-sub">Pune, Maharashtra</div>
+                </div>
+              </div>
+              <div class="acm-stats">
+                <div class="acm-stat"><span class="counter" data-target="20">0</span>+<small>Projects</small></div>
+                <div class="acm-stat"><span class="counter" data-target="10">0</span>+<small>Clients</small></div>
+                <div class="acm-stat"><span class="counter" data-target="100">0</span>%<small>Commitment</small></div>
+              </div>
+              <div class="acm-bar-row">
+                <span>Client Satisfaction</span>
+                <span>100%</span>
+              </div>
+              <div class="acm-progress"><div class="acm-prog-fill" style="width:0%" data-width="100%"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE -->
+  <section class="why section" id="why">
+    <div class="container">
+      <div class="section-label reveal">Why Picsio</div>
+      <h2 class="section-title centered reveal">Why Choose <span class="accent">PICSIO</span></h2>
+      <p class="section-sub reveal">Everything you need to build a powerful digital presence — under one roof.</p>
+      <div class="why-grid">
+        <div class="why-card reveal" data-delay="0">
+          <div class="wc-icon">✦</div>
+          <h3>Modern Design</h3>
+          <p>Pixel-perfect interfaces built with current design trends and your brand identity at heart.</p>
+        </div>
+        <div class="why-card reveal" data-delay="100">
+          <div class="wc-icon">⚡</div>
+          <h3>Fast Performance</h3>
+          <p>Optimised code, lightning-fast load times, and smooth experiences across all devices.</p>
+        </div>
+        <div class="why-card reveal" data-delay="200">
+          <div class="wc-icon">🔍</div>
+          <h3>SEO Friendly</h3>
+          <p>Built from the ground up to rank — clean markup, semantic HTML, and best-practice structure.</p>
+        </div>
+        <div class="why-card reveal" data-delay="0">
+          <div class="wc-icon">📱</div>
+          <h3>Mobile Responsive</h3>
+          <p>Flawless on every screen size, from flagship phones to ultra-wide monitors.</p>
+        </div>
+        <div class="why-card reveal" data-delay="100">
+          <div class="wc-icon">📈</div>
+          <h3>Business Focused</h3>
+          <p>Every decision is driven by one goal — helping your business grow and convert better.</p>
+        </div>
+        <div class="why-card reveal" data-delay="200">
+          <div class="wc-icon">💡</div>
+          <h3>Creative Strategy</h3>
+          <p>We think beyond aesthetics — blending brand strategy with creative execution.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services section" id="services">
+    <div class="container">
+      <div class="section-label reveal">What We Do</div>
+      <h2 class="section-title reveal">Our Services</h2>
+      <div class="services-grid">
+        <div class="service-card reveal" data-delay="0">
+          <div class="sc-num">01</div>
+          <div class="sc-icon">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="3" y="3" width="22" height="16" rx="3" stroke="currentColor" stroke-width="1.8"/><path d="M9 25h10M14 19v6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Website Development</h3>
+          <p>Full-stack custom websites built for speed, scalability, and conversion.</p>
+          <div class="sc-arrow">→</div>
+        </div>
+        <div class="service-card reveal" data-delay="80">
+          <div class="sc-num">02</div>
+          <div class="sc-icon">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="10" stroke="currentColor" stroke-width="1.8"/><path d="M14 9v5l3 3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </div>
+          <h3>UI/UX Design</h3>
+          <p>Research-driven designs that delight users and drive business outcomes.</p>
+          <div class="sc-arrow">→</div>
+        </div>
+        <div class="service-card reveal" data-delay="160">
+          <div class="sc-num">03</div>
+          <div class="sc-icon">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M4 7h20M4 14h14M4 21h8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Business Websites</h3>
+          <p>Professional corporate sites that build trust and credibility instantly.</p>
+          <div class="sc-arrow">→</div>
+        </div>
+        <div class="service-card reveal" data-delay="0">
+          <div class="sc-num">04</div>
+          <div class="sc-icon">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="4" y="6" width="20" height="16" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M4 11h20" stroke="currentColor" stroke-width="1.8"/></svg>
+          </div>
+          <h3>Landing Pages</h3>
+          <p>High-converting single-page experiences built to capture leads and close sales.</p>
+          <div class="sc-arrow">→</div>
+        </div>
+        <div class="service-card reveal" data-delay="80">
+          <div class="sc-num">05</div>
+          <div class="sc-icon">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="10" r="5" stroke="currentColor" stroke-width="1.8"/><path d="M5 24c0-4.97 4.03-9 9-9s9 4.03 9 9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Portfolio Websites</h3>
+          <p>Showcase your work beautifully — crafted for creatives and agencies.</p>
+          <div class="sc-arrow">→</div>
+        </div>
+        <div class="service-card reveal" data-delay="160">
+          <div class="sc-num">06</div>
+          <div class="sc-icon">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M14 4v4M14 20v4M4 14h4M20 14h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="14" cy="14" r="5" stroke="currentColor" stroke-width="1.8"/></svg>
+          </div>
+          <h3>Website Maintenance</h3>
+          <p>Ongoing support, updates, and optimisations to keep your site running perfectly.</p>
+          <div class="sc-arrow">→</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section class="portfolio section" id="portfolio">
+    <div class="container">
+      <div class="section-label reveal">Our Work</div>
+      <h2 class="section-title reveal">Selected Projects</h2>
+      <div class="portfolio-grid">
+        <div class="portfolio-card reveal pc-large" data-delay="0">
+          <div class="pc-img pc-img-1">
+            <div class="pc-overlay">
+              <div class="pc-tag">AI · Platform</div>
+              <h3>AI Interior Design Platform</h3>
+              <p>Intelligent room design powered by generative AI models.</p>
+              <a href="#" class="pc-link">View Project →</a>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-card reveal" data-delay="100">
+          <div class="pc-img pc-img-2">
+            <div class="pc-overlay">
+              <div class="pc-tag">IoT · Web App</div>
+              <h3>Smart Weather Controller</h3>
+              <p>Real-time climate monitoring dashboard.</p>
+              <a href="#" class="pc-link">View Project →</a>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-card reveal" data-delay="200">
+          <div class="pc-img pc-img-3">
+            <div class="pc-overlay">
+              <div class="pc-tag">Simulation · 3D</div>
+              <h3>Train Station Simulation</h3>
+              <p>Interactive 3D transit visualisation system.</p>
+              <a href="#" class="pc-link">View Project →</a>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-card reveal" data-delay="0">
+          <div class="pc-img pc-img-4">
+            <div class="pc-overlay">
+              <div class="pc-tag">Marketing · Landing</div>
+              <h3>Business Landing Page</h3>
+              <p>High-converting SaaS marketing page.</p>
+              <a href="#" class="pc-link">View Project →</a>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-card reveal" data-delay="100">
+          <div class="pc-img pc-img-5">
+            <div class="pc-overlay">
+              <div class="pc-tag">E-Commerce</div>
+              <h3>E-Commerce Website</h3>
+              <p>Full-stack shopping experience with custom checkout.</p>
+              <a href="#" class="pc-link">View Project →</a>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-card reveal" data-delay="200">
+          <div class="pc-img pc-img-6">
+            <div class="pc-overlay">
+              <div class="pc-tag">Hospitality</div>
+              <h3>Restaurant Website</h3>
+              <p>Elegant online presence with reservation system.</p>
+              <a href="#" class="pc-link">View Project →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item reveal" data-delay="0">
+          <div class="stat-num"><span class="counter" data-target="20">0</span>+</div>
+          <div class="stat-label">Projects Delivered</div>
+        </div>
+        <div class="stat-item reveal" data-delay="100">
+          <div class="stat-num"><span class="counter" data-target="10">0</span>+</div>
+          <div class="stat-label">Happy Clients</div>
+        </div>
+        <div class="stat-item reveal" data-delay="200">
+          <div class="stat-num"><span class="counter" data-target="100">0</span>%</div>
+          <div class="stat-label">Commitment</div>
+        </div>
+        <div class="stat-item reveal" data-delay="300">
+          <div class="stat-num">24/7</div>
+          <div class="stat-label">Support Available</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING -->
+  <section class="booking section" id="booking">
+    <div class="container">
+      <div class="booking-inner">
+        <div class="booking-left">
+          <div class="section-label reveal">Get Started</div>
+          <h2 class="section-title reveal">Book a Strategy <span class="accent">Call</span></h2>
+          <p class="booking-desc reveal">Tell us about your project and let's figure out how we can help you grow. No pressure, no obligations.</p>
+          <ul class="booking-perks reveal">
+            <li><span class="perk-check">✓</span> Free 30-minute consultation</li>
+            <li><span class="perk-check">✓</span> Custom strategy proposal</li>
+            <li><span class="perk-check">✓</span> Transparent pricing</li>
+            <li><span class="perk-check">✓</span> Response within 24 hours</li>
+          </ul>
+        </div>
+        <div class="booking-right reveal">
+          <div class="booking-form-card">
+            <div class="bfc-header">
+              <div class="bfc-dot"></div>
+              <div class="bfc-dot yellow"></div>
+              <div class="bfc-dot green"></div>
+              <span>New Project Inquiry</span>
+            </div>
+            <form id="bookingForm" class="booking-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label>Full Name *</label>
+                  <input type="text" name="name" placeholder="John Doe" required />
+                </div>
+                <div class="form-group">
+                  <label>Company Name</label>
+                  <input type="text" name="company" placeholder="Your Company" />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label>Email *</label>
+                  <input type="email" name="email" placeholder="john@company.com" required />
+                </div>
+                <div class="form-group">
+                  <label>Phone Number</label>
+                  <input type="tel" name="phone" placeholder="+91 98765 43210" />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label>Business Type</label>
+                  <select name="business">
+                    <option value="">Select type</option>
+                    <option>Startup / New Business</option>
+                    <option>SME / Growing Business</option>
+                    <option>Enterprise</option>
+                    <option>Freelancer / Individual</option>
+                    <option>Agency</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>Project Budget</label>
+                  <select name="budget">
+                    <option value="">Select range</option>
+                    <option>Under ₹25,000</option>
+                    <option>₹25,000 – ₹50,000</option>
+                    <option>₹50,000 – ₹1,00,000</option>
+                    <option>₹1,00,000+</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group full">
+                <label>Project Description *</label>
+                <textarea name="description" placeholder="Tell us about your project, goals, and timeline..." rows="4" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full">
+                <span>Send Inquiry</span>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials section" id="testimonials">
+    <div class="container">
+      <div class="section-label reveal">Social Proof</div>
+      <h2 class="section-title centered reveal">What Clients Say</h2>
+      <div class="testimonials-slider" id="testimonialsSlider">
+        <div class="testimonial-track" id="testimonialTrack">
+          <div class="testimonial-card">
+            <div class="tc-stars">★★★★★</div>
+            <p class="tc-text">"Picsio transformed our outdated website into a modern, high-converting platform. Within 3 months of launch, our lead inquiries increased by over 200%. Absolutely phenomenal work."</p>
+            <div class="tc-author">
+              <div class="tc-avatar">R</div>
+              <div>
+                <div class="tc-name">Rahul Mehta</div>
+                <div class="tc-role">Founder, TechFlow India</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="tc-stars">★★★★★</div>
+            <p class="tc-text">"The team at Picsio genuinely understood our brand vision. They delivered a website that not only looks stunning but actually drives business results. Worth every rupee."</p>
+            <div class="tc-author">
+              <div class="tc-avatar">S</div>
+              <div>
+                <div class="tc-name">Sneha Kapoor</div>
+                <div class="tc-role">Director, Kapoor & Associates</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="tc-stars">★★★★★</div>
+            <p class="tc-text">"Fast, professional, and incredibly creative. Picsio built our e-commerce platform from scratch and the results speak for themselves — 40% increase in online sales in the first month."</p>
+            <div class="tc-author">
+              <div class="tc-avatar">A</div>
+              <div>
+                <div class="tc-name">Arjun Sharma</div>
+                <div class="tc-role">CEO, ShopNest</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider-dots" id="sliderDots">
+          <button class="dot active" data-index="0"></button>
+          <button class="dot" data-index="1"></button>
+          <button class="dot" data-index="2"></button>
+        </div>
+        <div class="slider-arrows">
+          <button class="slider-arrow" id="prevBtn">←</button>
+          <button class="slider-arrow" id="nextBtn">→</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="contact-inner">
+        <div class="contact-left">
+          <div class="section-label reveal">Contact</div>
+          <h2 class="section-title reveal">Let's Build Something <span class="accent">Amazing</span></h2>
+          <div class="contact-info reveal">
+            <div class="ci-item">
+              <div class="ci-icon">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 5l7 5 7-5M3 5h14v12H3V5z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div>
+                <div class="ci-label">Email</div>
+                <a href="mailto:info@picsio.in" class="ci-val">info@picsio.in</a>
+              </div>
+            </div>
+            <div class="ci-item">
+              <div class="ci-icon">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2C7.24 2 5 4.24 5 7c0 4.5 5 11 5 11s5-6.5 5-11c0-2.76-2.24-5-5-5z" stroke="currentColor" stroke-width="1.5"/><circle cx="10" cy="7" r="1.5" stroke="currentColor" stroke-width="1.5"/></svg>
+              </div>
+              <div>
+                <div class="ci-label">Location</div>
+                <div class="ci-val">Pune, Maharashtra</div>
+              </div>
+            </div>
+          </div>
+          <div class="contact-btns reveal">
+            <a href="mailto:info@picsio.in" class="btn btn-primary">Send Message</a>
+            <a href="#booking" class="btn btn-outline">Book Strategy Call</a>
+          </div>
+        </div>
+        <div class="contact-right reveal">
+          <div class="contact-visual">
+            <div class="cv-ring cv-ring-1"></div>
+            <div class="cv-ring cv-ring-2"></div>
+            <div class="cv-ring cv-ring-3"></div>
+            <div class="cv-center">
+              <div class="cv-logo">PICSIO</div>
+              <div class="cv-sub">Pune · India</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">PICS<span>IO</span></div>
+          <p>Building Future-Ready Digital Experiences for ambitious businesses worldwide.</p>
+          <div class="footer-socials">
+            <a href="#" aria-label="Twitter">𝕏</a>
+            <a href="#" aria-label="Instagram">◉</a>
+            <a href="#" aria-label="LinkedIn">in</a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <div class="fc-title">Navigation</div>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <div class="footer-col">
+            <div class="fc-title">Services</div>
+            <a href="#services">Website Development</a>
+            <a href="#services">UI/UX Design</a>
+            <a href="#services">Landing Pages</a>
+            <a href="#services">Website Maintenance</a>
+          </div>
+          <div class="footer-col">
+            <div class="fc-title">Contact</div>
+            <a href="mailto:info@picsio.in">info@picsio.in</a>
+            <span>Pune, Maharashtra</span>
+            <a href="#booking" class="footer-cta">Book a Call →</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Picsio. All Rights Reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SUCCESS POPUP -->
+  <div class="success-overlay" id="successOverlay">
+    <div class="success-modal">
+      <div class="success-icon">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="22" stroke="#2563EB" stroke-width="2"/><path d="M14 24l7 7 13-14" stroke="#2563EB" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="check-path"/></svg>
+      </div>
+      <h3>Message Sent!</h3>
+      <p>Thank you for reaching out. We'll get back to you within 24 hours.</p>
+      <button class="btn btn-primary" id="closeSuccess">Got it</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
